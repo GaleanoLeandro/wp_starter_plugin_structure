@@ -1,13 +1,13 @@
 <?php
 /**
- * @package AndyPlugin
+ * @package StarterPlugin
  */
+
+namespace StarterPlugin\Base;
 
 class Activate
 {
-    function on_activate () {
-        // Generated a CPT
-        // $this->custom_post_type();
+    public static function on_activate () {
         // Flush rewrite rules
         flush_rewrite_rules();
     }

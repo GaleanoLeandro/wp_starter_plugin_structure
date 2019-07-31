@@ -1,16 +1,13 @@
 <?php
 /**
- * @package AndyPlugin
+ * @package StarterPlugin
  */
 
-//  Pages
-require_once plugin_dir_path(__FILE__) . 'Pages/Admin.php';
+namespace StarterPlugin;
 
-// Base
-require_once plugin_dir_path(__FILE__) . 'Base/Enqueue.php';
-require_once plugin_dir_path(__FILE__) . 'Base/Activate.php';
-require_once plugin_dir_path(__FILE__) . 'Base/Deactivate.php';
-require_once plugin_dir_path(__FILE__) . 'Base/SettingsLink.php';
+use StarterPlugin\Pages\Admin;
+use StarterPlugin\Base\Enqueue;
+use StarterPlugin\Base\SettingsLink;
 
 final class Init
 {
@@ -31,7 +28,6 @@ final class Init
      * Loop through the classes, initialize them,
      * and call the register() method of the class 
      * if it exist.
-     * @return
      */
     public static function register_services()
     {

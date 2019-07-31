@@ -4,7 +4,7 @@
  * 1. Edit the variables as per your project requirements.
  * 2. In paths you can add <<glob or array of globs>>.
  *
- * @package AP
+ * @package StarterPlugin
  */
 
 module.exports = {
@@ -43,10 +43,10 @@ module.exports = {
 	watchPhp: './**/*.php', // Path to all PHP files.
 
 	// Translation options.
-	textDomain: 'AP', // Your textdomain here.
-	translationFile: 'AP.pot', // Name of the translation file.
+	textDomain: 'StarterPlugin', // Your textdomain here.
+	translationFile: 'StarterPlugin.pot', // Name of the translation file.
 	translationDestination: './languages', // Where to save the translation files.
-	packageName: 'AP', // Package name.
+	packageName: 'StarterPlugin', // Package name.
 	bugReport: 'https://AhmadAwais.com/contact/', // Where can users report bugs.
 	lastTranslator: 'Ahmad Awais <your_email@email.com>', // Last translator Email ID.
 	team: 'AhmadAwais <your_email@email.com>', // Team's Email ID.

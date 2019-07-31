@@ -1,11 +1,13 @@
 <?php
 /**
- * @package AndyPlugin
+ * @package StarterPlugin
  */
+
+namespace StarterPlugin\Base;
 
 class Deactivate
 {
-    function on_deactivate () {
+    public static function on_deactivate () {
         // Flush rewrite rules
         flush_rewrite_rules();
     }

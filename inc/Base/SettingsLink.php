@@ -1,7 +1,9 @@
 <?php
 /**
- * @package AndyPlugin
+ * @package StarterPlugin
  */
+
+namespace StarterPlugin\Base;
 
 class SettingsLink
 {
@@ -9,7 +11,7 @@ class SettingsLink
 
     function __construct () 
     {
-        $this->pluginName = AP_NAME;
+        $this->pluginName = STARTER_PLUGIN_NAME;
     }
     public function register()
     {
@@ -17,7 +19,7 @@ class SettingsLink
     }
 
     public function settings_link ( $links ) {
-        $settings_link = '<a href="admin.php?page=andy_plugin">Settings</a>';
+        $settings_link = '<a href="admin.php?page=starter_plugin">Settings</a>';
         array_push($links, $settings_link);
         return $links;
     }

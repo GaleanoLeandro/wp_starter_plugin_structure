@@ -1,6 +1,6 @@
 <?php
 /**
- * @package AndyPlugin
+ * @package StarterPlugin
  */
 
-print("<h1>Andy Plugin Settings</h1>");
+print("<h1>Starter Plugin Settings Page</h1>");
